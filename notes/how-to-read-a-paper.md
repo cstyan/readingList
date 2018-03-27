@@ -1,5 +1,5 @@
 # The idea
-Read papers in three passes, each accomplishing specific goals and builds upon the pervious pass. 
+Read papers in three passes, each accomplishing specific goals and builds upon the previous pass. 
 Do this instead of reading all the way through from the beginning in one go and getting lost in all 
 the details.
 
@@ -8,15 +8,15 @@ Goal: get a bird's-eye view of the paper. With this you can decide if you need t
 read the references, etc.
 1. Title, abstract, and introduction
 2. Read the section and sub-section headings, what are the highlights of the paper
-3. glance at mathematical content to determine the underlying theorhetical foundations (?)
+3. Glance at mathematical content to determine the underlying theoretical foundations (?)
 4. Read the conclusions, are they sane
 5. Glance over references, ticking off the ones you've already read.
 
 From this you should be able to answer the 5 C's
-1. Category - What type of paper? Measurement, analysis of existing system, description of research
+1. Category - What type of paper? Measurement, analysis of the existing system, description of research
  prototype? TODO: what are these?
-2. Context - Which other papers is this one related to, which theorhetical bases were used to analyze 
-the the problem? AKA what else do you need to know
+2. Context - Which other papers is this one related to, which theoretical bases were used to analyze 
+the problem? AKA what else do you need to know
  in order to understand this paper.
 3. Correctness - do the assumptions appear to be valid
 4. Contributions - what are the paper's main contributions?
@@ -30,7 +30,7 @@ Read paper with more care but still ignore details (lots of math/equations, proo
 of terms you don't understand or questions you would want to ask the author(s).
 
 1. Look carefully at figures/diagrams/etc. Do graphs have axes labeled properly, are results shown with
- error bars so that conclusions are statsically significant TODO: what are error bars?
+ error bars so that conclusions are statistically significant TODO: what are error bars?
 
 2. make not of references that you haven't read
 
@@ -40,11 +40,11 @@ this paper for your work, (b) keep reading the paper later, probably after readi
 that you haven't read before, or (c) keep reading right away.
 
 # Third pass
-The goal is to attempt to virtually re-implement the paper; that is, making the same assumptsion as 
+The goal is to attempt to virtually re-implement the paper; that is, making the same assumption as 
 the author, attempt to re-create the work. TODO: err, what? redo the research? write programs to
 run the proofs?
 Try to identify and challenge all the assumptions in the paper, and think about how you would present
-ideas yourself. At the end of the third pass you should be able to reconstruct the structure of the
+ideas yourself. At the end of the third pass, you should be able to reconstruct the structure of the
 paper from memory, as well as identify + explain it's strong and weak points. These may include implicit
 assumptions, missing citations to relevant work, and potential issues with experimental or analytical
 techniques.
@@ -58,7 +58,7 @@ of existing material on the same (or similar) topic of the paper you're reviewin
 3. Research done in the field usually in the order of oldest to latest.
 4. Challenges being faced and ongoing work, if available.
 
-First use an academic search engine to find 5 recent highly-cited papers in the area. Do the first pass
+First, use an academic search engine to find 5 recent highly-cited papers in the area. Do the first pass
 on each of these papers and read their related works/references sections. If you're lucky you'll find
 a recent survey paper. If you find the survey read it and you're done. 
 Otherwise, find shared citations/repeated author names in the references. Download other papers from 
