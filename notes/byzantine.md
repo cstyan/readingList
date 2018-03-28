@@ -1,8 +1,8 @@
 # First Pass
 Reliable computer systems need to be able to handle not just outright failures/errors of certain components
-but also malfunctioning components that give conflicting information to different parts of the system
-We can demonstrate this issue in terms of a group of Byzantine generals trying to decideo on a battle plan.
-The generals must agree on a common battle plan but can communicate with eachother by messenger only.
+but also malfunctioning components that give conflicting information to different parts of the system.
+We can demonstrate this issue in terms of a group of Byzantine generals trying to decide on a battle plan.
+The generals must agree on a common battle plan but can communicate with each other by messenger only.
 One or more of the generals may be traitors (malfunctioning components) who will try to confuse the others.
 The generals can only communicate to eachother via unforgeable. The problem is to find an algorithm
 to ensure that loyal generals will reach some agreement; this problem is only solvable if more than
@@ -11,8 +11,8 @@ to ensure that loyal generals will reach some agreement; this problem is only so
 Failure due to components sending conflicting information to different parts of the system are often 
 overlooked. Byzantine generals are camped outside a city and can communicate only via written messages
 sent via messengers. After observing the enemy the generals must decide on a common plan of action.
-Some generals may be traitors trying to prevent the loyal generals from reaching agreement (or trying 
-to get them to chose a bad plan?)
+Some generals may be traitors trying to prevent the loyal generals from reaching an agreement (or trying 
+to get them to choose a bad plan?)
 
 The algorithm must guarantee that:
 
@@ -29,7 +29,7 @@ Suppose the generals all have different viewpoints of the city, and so have diff
 tell the other generals. Let v(i) be the information by the i'th general. Note that it's not necessarily
 their decision for the plan. All the generals use the same method of combining the information of 
 v(i) ... v(n) that they then use to decide on the plan. To achieve condition be that method needs to 
-be robust. If each v(i) is is the i'th generals vote on whether to attack or retreat, then the overal 
+be robust. If each v(i) is is the i'th generals vote on whether to attack or retreat, then the overall 
 decision might be based on a majority vote. A small # of traitors can only affect the decision if the
 information provided by the loyal generals was more or less evenly split between available decisions.
 Note that here neither decision would be considered bad.
@@ -39,7 +39,7 @@ message with their information to every other general, but this could violate gu
 traitorous general could send attack to one general and retreat to another. So to satisfy Condition A
 the following must be true:
 
-1. every loyal general must obtain the same informtaion v(1) ... v(n)
+1. every loyal general must obtain the same information v(1) ... v(n)
 
 This implies that a general can't necessarily use the value of v(i) directly from general i since they
 may be a traitor. Unless we have a careful solution for this then it's possible that generals use a value
@@ -67,7 +67,7 @@ IC2, if the commanding general is loyal, then every loyal lt. obeys the order th
 These conditions are called interactive consistency conditions. Note that the commanding officer does
 not necessarily need to be loyal. To solve the original problem, the i'th general sends their value
 of v(i) by using a solution to the Byzantine Generals Problem to send the order "use v(i) as my value"
-with the other generals as the lietenants.
+with the other generals as the lieutenants.
 
 Questions
 - how do we ensure messages are unforgeable?
@@ -79,7 +79,7 @@ that break the systems 'liveness'? trigger a leader election?
 
 to read:
 - The Byzantine generals strike again Dolev, D.
-- Reaching agreement in the presece of faults, same authors as this paper
+- Reaching agreement in the presence of faults, same authors as this paper
 
 the crypto papers don't seem to relevant to my interests at this point, if the answer to messages
 being unforgeable is simply to use encryption and keys then that's good enough for me
